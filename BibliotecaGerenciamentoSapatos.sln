@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaGerenciamentoSapatos", "BibliotecaGerenciamentoSapatos\BibliotecaGerenciamentoSapatos.csproj", "{C8A09117-91D8-4B1B-88F6-0B4D014FD1F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceGrafica", "InterfaceGrafica\InterfaceGrafica.csproj", "{D178C291-F239-467E-BA30-0BC481551D9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8A09117-91D8-4B1B-88F6-0B4D014FD1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A09117-91D8-4B1B-88F6-0B4D014FD1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A09117-91D8-4B1B-88F6-0B4D014FD1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A09117-91D8-4B1B-88F6-0B4D014FD1F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D178C291-F239-467E-BA30-0BC481551D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D178C291-F239-467E-BA30-0BC481551D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D178C291-F239-467E-BA30-0BC481551D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D178C291-F239-467E-BA30-0BC481551D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {453FCA08-C3D0-45BD-89A0-4C2E2B839498}
+	EndGlobalSection
+EndGlobal

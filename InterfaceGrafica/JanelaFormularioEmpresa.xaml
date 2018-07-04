@@ -1,0 +1,73 @@
+﻿<Window x:Class="InterfaceGrafica.JanelaFormularioEmpresa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfaceGrafica"
+        mc:Ignorable="d"
+        Title="JanelaFormularioEmpresa" Height="450" Width="800">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0">ID:</Label>
+        <Label Grid.Row="1">Nome:</Label>
+        <Label Grid.Row="2">CNPJ:</Label>
+        <Label Grid.Row="3">Razao Social:</Label>
+        <Label Grid.Row="4">Rua:</Label>
+        <Label Grid.Row="5">Bairro:</Label>
+        <Label Grid.Row="6">Numero:</Label>
+        <Label Grid.Row="7">Cidade:</Label>
+        <Label Grid.Row="8">Estado:</Label>
+
+        <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Path=pessoaselecionada.Id}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=pessoaselecionada.Nome}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Path=pessoaselecionada.Cnpj}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding Path=pessoaselecionada.RazaoSocial}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding Path=pessoaselecionada.NomeRua}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="5" Text="{Binding Path=pessoaselecionada.NomeBairro}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="6" Text="{Binding Path=pessoaselecionada.NumeroResidencial}"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="7" Text="{Binding Path=pessoaselecionada.NomeCidade}"></TextBox>
+
+        <ComboBox Grid.Column="1" Grid.Row="8" SelectedItem="{Binding pessoaselecionada.NomeEstado}" >
+            <ComboBoxItem Content="PR"></ComboBoxItem>
+            <ComboBoxItem Content="SP"></ComboBoxItem>
+            <ComboBoxItem Content="SC"></ComboBoxItem>
+            <ComboBoxItem Content="RS"></ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="DataGrid2" Grid.Row="9" Grid.ColumnSpan="2"
+                  CanUserAddRows="False"
+                  ItemsSource="{Binding Path=PessoasJuridicas}" AutoGenerateColumns="False"
+                  SelectedItem="{Binding Path=pessoaselecionada}" RenderTransformOrigin="0.466,0.511" Margin="0,0,0,-47" SelectionChanged="DataGrid2_SelectionChanged" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="RazaoSocial" Binding="{Binding RazaoSocial}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="CNPJ" Binding="{Binding Cnpj}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Rua" Binding="{Binding NomeRua}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Numero" Binding="{Binding NumeroResidencial}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Cidade" Binding="{Binding NomeCidade}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Estado" Binding="{Binding NomeEstado}" ></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="10" Margin="137,113,174,-81" Width="70" x:Name="OkButton" Click="OkButton_Click">Ok</Button>
+        <Button Grid.Row="10" Margin="156,113,155,-81" Width="70" x:Name="CancelButton" Click="CancelButton_Click" Grid.Column="1" >Cancelar</Button>
+
+
+    </Grid>
+</Window>

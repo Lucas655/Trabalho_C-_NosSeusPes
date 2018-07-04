@@ -1,0 +1,42 @@
+﻿<Window x:Class="InterfaceGrafica.Estoque"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfaceGrafica"
+        mc:Ignorable="d"
+        Title="Estoque" Height="500" Width="800">
+    <Grid Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Label Grid.Row="0" Grid.Column="0">Modelo do Sapato</Label>
+        <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding Path=Busca}" Margin="111,0,0,0"/>
+        <Button x:Name="Botaopesquisa" Click="Botaopesquisa_Click" Grid.Row="0" Grid.Column="1" Margin="105,0,186,0">Filtrar</Button>
+               
+        <DataGrid x:Name="DataGrid" Grid.Row="1" Grid.ColumnSpan="2"
+                  AutoGenerateColumns="False"
+                  Visibility="Visible" CanUserAddRows="False"
+                   ItemsSource="{Binding Path=Sapatos}"
+                  SelectedItem="{Binding Path=SapatoSelecionado}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Modelo" Binding="{Binding Cpf}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Amarracao" Binding="{Binding DataNasc}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Material" Binding="{Binding Material}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Valor" Binding="{Binding ValorSapato}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Cor" Binding="{Binding Cor.NomeCor}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Numero" Binding="{Binding Tamanho.TamanhoSapato}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="2" Grid.ColumnSpan="2" Margin="283,0" Click="Button_Click">Cancelar</Button>
+    </Grid>
+</Window>
