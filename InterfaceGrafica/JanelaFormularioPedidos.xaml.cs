@@ -80,8 +80,10 @@ namespace InterfaceGrafica
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             PedidoSelecionado.ItensPedido.Add(ItemPedidoSelecionado);
-            ctx.Pedidos.Add(PedidoSelecionado);
+            ctx.Pedidos.Add(PedidoSelecionado);            
+            MessageBox.Show("Pedido Criado com Sucesso!");
             ctx.SaveChanges();
+            this.Close();            
         }
 
         private void Button_ClickC(object sender, RoutedEventArgs e)

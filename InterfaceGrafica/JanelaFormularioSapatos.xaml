@@ -65,7 +65,7 @@
                 <DataGridTextColumn Header="Modelo" Binding="{Binding NomeSapato}" ></DataGridTextColumn>
                 <DataGridTextColumn Header="Amarracao" Binding="{Binding TipoAmarracao}" ></DataGridTextColumn>
                 <DataGridTextColumn Header="Material" Binding="{Binding Material}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Valor" Binding="{Binding Valor}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Valor" Binding="{Binding ValorSapato}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Cor" Binding="{Binding Cor.NomeCor}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Numero" Binding="{Binding Tamanho.TamanhoSapato}"></DataGridTextColumn>                
             </DataGrid.Columns>            

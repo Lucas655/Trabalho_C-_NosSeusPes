@@ -7,13 +7,13 @@ namespace BibliotecaGerenciamentoSapatos.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class mig1 : IMigrationMetadata
+    public sealed partial class Mig2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mig1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Mig2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807010218174_mig1"; }
+            get { return "201807040252072_Mig2"; }
         }
         
         string IMigrationMetadata.Source
