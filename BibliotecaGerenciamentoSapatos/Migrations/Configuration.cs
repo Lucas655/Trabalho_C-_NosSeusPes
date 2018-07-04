@@ -14,11 +14,6 @@ namespace BibliotecaGerenciamentoSapatos.Migrations
 
         protected override void Seed(BibliotecaGerenciamentoSapatos.ModelSapato context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data.
-
             Cor c = new Cor();
             c.NomeCor = "Preto";
 
@@ -44,7 +39,7 @@ namespace BibliotecaGerenciamentoSapatos.Migrations
             context.Tamanhos.Add(t);
             context.Tamanhos.Add(t2);
             context.Tamanhos.Add(t3);
-
+            
             context.SaveChanges();
         }
     }

@@ -52,7 +52,17 @@ namespace InterfaceGrafica
             {
                 Estoque Estoque = new Estoque();
                 Estoque.ShowDialog();
-            }           
+            }
+            else if (sender == GPesquisaFisica)
+            {
+                ListaClientes ListaClientes = new ListaClientes();
+                ListaClientes.ShowDialog();
+            }
+            else if (sender == GPesquisaJuridica)
+            {
+                ListaEmpresas ListaEmpresas = new ListaEmpresas();
+                ListaEmpresas.ShowDialog();
+            }
             else if (sender == GRelatorioPf)
             {
                 ModelSapato ctx = new ModelSapato();

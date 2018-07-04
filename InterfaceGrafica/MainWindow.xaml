@@ -19,6 +19,10 @@
                    x:Name="GPessoas" ></MenuItem>
                 <MenuItem Click="MenuItem_Click" Header="Pessoa Jurídica"
                    x:Name="GEmpresas" ></MenuItem>
+                <MenuItem Click="MenuItem_Click" Header="Pesquisar Pessoa Fisica"
+                   x:Name="GPesquisaFisica" ></MenuItem>
+                <MenuItem Click="MenuItem_Click" Header="Pesquisar Pessoa Juridica"
+                   x:Name="GPesquisaJuridica" ></MenuItem>
             </MenuItem>
             <MenuItem Header="Gerenciamento de Pedidos">
                 <MenuItem Click="MenuItem_Click" Header="Cadastrar Pedidos"

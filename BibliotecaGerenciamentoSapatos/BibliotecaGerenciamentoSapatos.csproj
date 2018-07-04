@@ -73,9 +73,13 @@
     <Compile Include="Cor.cs" />
     <Compile Include="Facade.cs" />
     <Compile Include="ItemPedido.cs" />
-    <Compile Include="Migrations\201807010218174_mig1.cs" />
-    <Compile Include="Migrations\201807010218174_mig1.Designer.cs">
-      <DependentUpon>201807010218174_mig1.cs</DependentUpon>
+    <Compile Include="Migrations\201807040247501_Mig.cs" />
+    <Compile Include="Migrations\201807040247501_Mig.Designer.cs">
+      <DependentUpon>201807040247501_Mig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807040252072_Mig2.cs" />
+    <Compile Include="Migrations\201807040252072_Mig2.Designer.cs">
+      <DependentUpon>201807040252072_Mig2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelSapato.cs" />
@@ -94,8 +98,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807010218174_mig1.resx">
-      <DependentUpon>201807010218174_mig1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807040247501_Mig.resx">
+      <DependentUpon>201807040247501_Mig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807040252072_Mig2.resx">
+      <DependentUpon>201807040252072_Mig2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
